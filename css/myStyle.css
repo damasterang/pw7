@@ -1,0 +1,295 @@
+@font-face{
+	font-family: damas;
+	src: url(../font/LOT.otf);
+}
+@font-face{
+	font-family: fajar;
+	src: url(../font/RalewayThin.ttf);
+}
+@font-face{
+	font-family: pri;
+	src: url(../font/abeatbykairegular.otf);
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: pri;
+}
+
+/*tabel*/
+form td{
+	height: 30px;
+	color: #fff;
+	margin: 0;
+}
+.input{
+	margin-left: -5px;
+}
+.label{
+	border: 1px solid red;
+	width: 100px;
+	height: 30px;
+	background-color: red;
+	padding-right: 8px;
+	margin: 3px 0;
+	text-align: right;
+	vertical-align: middle;
+	line-height: 30px;
+}
+input{
+	height: 30px;
+	border: 1px solid red;
+	padding: 0px 5px;
+	margin-left: -2px;
+	padding-right: 10px;
+	outline: red 2px;
+}
+form#inputDb tr button, form#inputDb2 tr button{
+	border: solid 1px red;	
+	width: 90px;
+	height: 30px;
+	background-color: red;
+	color: #fff;
+	cursor: pointer;
+	margin-top: 3px;
+	-webkit-transition: all .3s linear 0s;
+	   -moz-transition: all .3s linear 0s;
+	    -ms-transition: all .3s linear 0s;
+	     -o-transition: all .3s linear 0s;
+	        transition: all .3s linear 0s;
+}
+tr button:hover{
+	background-color: #fff;
+	color: red;	
+}
+.reset{
+	margin-right: 5px;
+}
+.submit{
+	float: right;
+}
+.wrapper{
+	width: 700px;
+	margin: 10px auto;
+	padding: 10px;
+	/*background-color: blue;*/
+	border: 1px solid red;	
+}
+
+#head{
+	position: relative;
+	width: 100%;
+	height: 70px;
+	text-align: right;
+	vertical-align: middle;
+	font-size: 50px;
+	margin-bottom: 10px;
+	line-height: 70px;
+	background-color: red;
+	color: #fff;
+}
+#head > p{
+	margin-right: 20px;
+	font-family: fajar;
+}
+#tableOne {
+	border: 1px solid red;
+	border-collapse: collapse;
+}
+#tableOne th{
+	background-color: red;
+	color: #fff;
+}
+#tableOne th, #tableOne td{
+	padding: 4px;
+}
+#tableOne .iconTd{
+	text-align: center;
+}
+.iconTd > button, .iconTd > a{
+	display: block;
+	background: none;
+	border: none;
+	cursor: pointer;
+	opacity: 0.4;
+	-webkit-transition: all .3s linear 0s;
+	   -moz-transition: all .3s linear 0s;
+	    -ms-transition: all .3s linear 0s;
+	     -o-transition: all .3s linear 0s;
+	        transition: all .3s linear 0s;
+}
+.iconTd > button:hover, .iconTd > a:hover{
+	opacity: 1;
+}
+#tambah{
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
+}
+#cross{
+	cursor: pointer;
+	-webkit-transition: all .3s ease 0s;
+	   -moz-transition: all .3s ease 0s;
+	    -ms-transition: all .3s ease 0s;
+	     -o-transition: all .3s ease 0s;
+	        transition: all .3s ease 0s;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+#inputDb, #inputDb2{
+	border: 1px solid red;
+	width: 320px;
+	padding: 10px;
+	padding-right: 25px;
+	/*margin-top: 10px;*/
+	/*display: none;*/
+}
+#deleteNotif{
+	position: fixed;
+	width: 200px;
+	background-color: #fff;
+	border: 1px solid red;
+	top: 10px;
+	left: 50%;
+	margin-left: -110px;
+	text-align: center;
+	padding: 20px 10px;
+	display: none;
+}
+.backgroundOver{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 768px;
+	background: black;
+	opacity: 0.5;
+	display: none;
+}
+#yesorno{
+	width: 160px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+#yesorno > div{
+	float: left;
+	width: 50px;
+	height: 15px;
+	background-color: red;
+	padding: 5px 4px;
+	margin: 0px 10px;	
+	text-decoration: none;
+	border: 1px solid red;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+	-webkit-transition: all .3s linear 0s;
+	   -moz-transition: all .3s linear 0s;
+	    -ms-transition: all .3s linear 0s;
+	     -o-transition: all .3s linear 0s;
+	        transition: all .3s linear 0s;
+}
+#yesorno > div:hover{
+	background-color: #fff;
+	border: 1px solid red;
+	color: red;
+}
+#yesorno a{
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 5px 19px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+#yesorno a:hover{
+	color: red;
+}
+
+#wrapperDel{
+	width: 250px;
+	border: 1px solid red;
+	background-color: #fff;
+	margin: 10px auto;
+	padding: 20px;
+	text-align: center;
+}
+#wrapperDel #backLink{
+	/*border: 1px solid red;*/
+	width: 101px;
+	padding: 10px 0px;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 30px;	
+}
+#backLink a{
+	color: #fff;
+	padding: 10px;
+	border: 1px solid red;
+	background-color: red;
+	text-decoration: none;
+	-webkit-transition: all .3s linear 0s;
+	   -moz-transition: all .3s linear 0s;
+	    -ms-transition: all .3s linear 0s;
+	     -o-transition: all .3s linear 0s;
+	        transition: all .3s linear 0s;
+}
+#backLink a:hover{
+	color: red;
+	background-color: #fff;
+}
+.edit{
+	margin: auto;
+}
+form#inputDb tr .reset:hover, form#inputDb tr .submit:hover, form#inputDb2 tr .submit:hover{
+	background-color: #fff;
+	color: red;
+}
+#ident{
+	width: 300px;
+	text-align: center;
+	background-color: red;
+	position: fixed;
+	bottom: 30px;
+	right: -80px;
+	padding: 10px;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+#ident > div{
+	margin: 5px 0px;
+}
+#backArrow{
+	text-decoration: none;
+	position: absolute;
+	top: 20px;
+	left: 15px;
+	width: 30px;
+	height: 30px;
+	border: 3px solid #fff;
+	border-radius: 25px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	-webkit-transition: all .3s linear 0s;
+	   -moz-transition: all .3s linear 0s;
+	    -ms-transition: all .3s linear 0s;
+	     -o-transition: all .3s linear 0s;
+	        transition: all .3s linear 0s;
+}
+#backArrow:hover{
+	color: red;
+	background-color: #fff;
+}
